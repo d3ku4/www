@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Assassin - Dota 2</title>
+    <link rel="icon" href="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/c/c9/Phantom_Assassin_minimap_icon.png/revision/latest?cb=20170816004245">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Phantom Assassin</h1>
+        <hr />
+    </header>
+    <main>
+        <div class="contentpic">
+            <div class="frame">
+                <img src="phantom-assassin.jpg" alt="Phantom Assassin" class="pic" />
+                <p class="headerpic">Атрибуты:</p>
+                <ul class="listpic">
+                    <li><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/7/7a/Strength_attribute_symbol.png/revision/latest?cb=20180323111829" alt="icon" class="icon">Сила 19+2</li>
+                    <li><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2d/Agility_attribute_symbol.png/revision/latest?cb=20180323111717" alt="icon" class="icon">Ловкость 21+3,4</li>
+                    <li><img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/5/56/Intelligence_attribute_symbol.png/revision/latest?cb=20180323111753" alt="icon" class="icon">Интеллект 15+1,4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab('character')">О персонаже</button>
+                    <button class="tab-button" onclick="openTab('abilities')">Способности</button>
+                    <button class="tab-button" onclick="openTab('items')">Айтембилд</button>
+                </div>
+
+                <div id="character" class="tab-content active">
+                    <h2>О персонаже</h2>
+                    <h4>Прыгает к врагам и наносит им критические удары</h4>
+                    <p>Phantom Assassin идёт в наступление, едва завидев свою жертву. Предварительно атаковав противника кинжалом, а затем мгновенно сблизившись с ним, Мортред легко уклоняется от атак и обрушивает на врага удар за ударом, любой из которых может оказаться роковым.</p>
+                    <hr />
+                    <h3>Биография</h3>
+                    <p style="text-align: center; font-weight: 300;"><b> <img src="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/c/c9/Phantom_Assassin_minimap_icon.png/revision/latest?cb=20170816004245" alt="PAicon" />Мортред, Phantom Assassin</b></p>
+                    <p><i>Сёстры Вуали, считающие убийство священной частью естественного цикла жизни, находят новых воспитанников в гаданиях. О своих жертвах сёстры узнают в медитации и пророческих изречениях. Они не принимают контрактов, и, похоже, не преследуют жертв из-за политики или корысти. Их убийства не выглядят частью какого-то замысла, и могут показаться не связанными между собой: сегодня жертвой станет человек с великой властью, завтра — крестьянин или копатель колодцев. Какой бы между убийствами ни было связи, её знают лишь сёстры. Они считают убитых жертвенным даром, а смерть от рук ордена — большой честью. Не ведающие своей личности, взращённые лишь на устоях ордена, убийцы легко заменяют друг друга, и число их неведомо. Возможно, их много; возможно, их единицы. Что лежит под вуалью — тайна без ответа. И лишь изредка эта сестра, когда никто не слышит, поднимает свою вуаль, чтобы нарушить запрет, прошептав своё имя: Мортред.</i></p>
+                </div>
+
+                <div id="abilities" class="tab-content">
+                    <h2>Способности</h2>
+                    <h3>Stifling Dagger</h3>
+                    <img style="border: 1px solid gray;" alt="Stifling Dagger icon" src="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/1/1c/Stifling_Dagger_icon.png/revision/latest?cb=20170816004056" />
+                    <p style="font-size:0.9em;"><i>Первый навык, изученный Сёстрами вуали, часто предвещает скорый удар.</i></p>
+                    <p>Бросает кинжал, который замедляет скорость передвижения врага, наносит ему физический урон в размере 65/70/75/80 + 25%/40%/55%/70% урона от атаки героя, а также накладывает эффекты предметов и способностей.</p>
+                    <p><b>Дальность применения:</b> 700/850/1000/1150</p>
+                    <p><b>Базовый урон:</b> 65/70/75/80</p>
+                    <p><b>Урон от атаки:</b> 25%/40%/55%/70%  <img alt="Талант" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Talent_tree_symbol.png/revision/latest/scale-to-width-down/16?cb=20230824194818" />(45%/60%/75%/90%)</p>
+                    <p><b>Замедление передвижения:</b> 50%</p>
+                    <p><b>Длительность замедления:</b> 2,2/2,8/3,4/4</p>
+                    <p><img alt="Cooldown symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Cooldown_symbol.png/revision/latest?cb=20180323111726" />6 (<img alt="Талант" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/c/cd/Talent_tree_symbol.png/revision/latest/scale-to-width-down/16?cb=20230824194818" />4)     <img alt="Mana symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Mana_symbol.png/revision/latest?cb=20180323111807" />30</p>
+                    <hr />
+                    <h3>Phantom Strike</h3>
+                    <img style="border: 1px solid gray;" alt="Phantom Strike icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/24/Phantom_Strike_icon.png/revision/latest?cb=20120517015221" />
+                    <p style="font-size:0.9em;"><i>Шёлковая вуаль Мортред — это последнее, что увидит её несчастный противник.</i></p>
+                    <p>Герой телепортируется к выбранному существу и, если это противник, получает дополнительную скорость атаки.</p>
+                    <p><b>Доп. скорость атаки:</b> 100/130/160/190</p>
+                    <p><b>Длительность:</b> 2.5</p>
+                    <p><img alt="Cooldown symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Cooldown_symbol.png/revision/latest?cb=20180323111726" />11/9/7/5     <img alt="Mana symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Mana_symbol.png/revision/latest?cb=20180323111807" />35/40/45/50</p>
+                    <hr />
+                    <h3>Blur</h3>
+                    <img style="border: 1px solid gray;  " alt="Blur icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Blur_icon.png/revision/latest?cb=20130920013204" />
+                    <p style="font-size:0.9em;"><i>Медитация позволяет Сёстрам вуали опережать противников в бою.</i></p>
+                    <p>Герой размывает свои очертания, становясь невидимым и передвигаясь быстрее, пока не совершит атаку или не приблизится к вражескому герою, башне или аванпосту.</p>
+                    <p><b>Длительность:</b> 30</p>
+                    <p><b>Радиус для невидимости:</b> 625/550/475/400</p>
+                    <p><b>Задержка перед появлением:</b> 0,4/0,6/0,8/1</p>
+                    <p><b>Уменьшение перезарядки:</b> 50%</p>
+                    <p><b>Доп. скорость передвижения при активации:</b> 3%/6%/9%/12%</p>
+                    <p><img alt="Cooldown symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Cooldown_symbol.png/revision/latest?cb=20180323111726" />60/55/50/45<img alt="Mana symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Mana_symbol.png/revision/latest?cb=20180323111807" />50</p>
+                    <hr />
+                    <h3>Coup de Grace</h3>
+                    <img style="border: 1px solid gray; " alt="Coup de Grace icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Coup_de_Grace_icon.png/revision/latest?cb=20120517015238" />
+                    <p style="font-size:0.9em;"><i>Погибнуть от судьбоносного удара Мортред — честь для её врагов.</i></p>
+                    <p>Герой оттачивает свои боевые навыки, с каждой атакой имея шанс войти в состояние смертельного фокуса. В нём следующая атака гарантированно нанесёт критический урон и снимет фокус. Способность Stifling Dagger даёт фокус с повышенной вероятностью.</p>
+                    <p><b>Шанс фокуса от атаки:</b> 17%</p>
+                    <p><b>Шанс фокуса от кинжала:</b> 34%</p>
+                    <p><b>Критический урон:</b> 200%/325%/450%</p>
+                    <p><b>Длительность фокуса:</b> 6/8/10</p>
+                    <hr />
+                    <h3>Fan of Knives</h3>
+                    <p style="padding: 8px; background-color: #1c2e50; max-width: 300px; border-radius: 7px; "><b>Новая способность от Aghanim`s shard</b></p>
+                    <img style="border: 1px solid gray; " alt="Fan of Knives icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/d/d9/Fan_of_Knives_icon.png/revision/latest?cb=20201219002228" />
+                    <p>Выпускает острые кинжалы в радиусе 550. Они наносят врагам урон в размере 28% от их максимального здоровья и накладывают истощение на 3 секунды.</p>
+                    <p><b>Урон от макс. здоровья:</b> 28%</p>
+                    <p><b>Длительность истощения:</b> 3</p>
+                    <p><b>Радиус:</b> 550</p>
+                    <p><img alt="Cooldown symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/Cooldown_symbol.png/revision/latest?cb=20180323111726" />15<img alt="Mana symbol" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f3/Mana_symbol.png/revision/latest?cb=20180323111807" />50</p>
+
+
+
+                </div>
+
+                <div id="items" class="tab-content">
+                    <h2>Айтембилд и таймиги</h2>
+                    <br />
+                    <div class="item-container">
+                        <div class="item">
+                            <p>2-4m</p>
+                            <img alt="Wraith Band" src="wraithband.jpg" />
+                        </div>
+                        <div class="item">
+                            <p>4-5m</p>
+                            <img alt="Magic Wand" src="magic_wand.webp" />
+                        </div>
+                        <div class="item">
+                            <p>5-8m</p>
+                            <img alt="Power Threads" src="power_treads.webp" />
+                        </div>
+                        <div class="item">
+                            <p>12-16m</p>
+                            <img alt="Battle Fury" src="bfury.png" />
+                        </div>
+                        <div class="item">
+                            <p>21-24m</p>
+                            <img alt="Desolator" src="desolator.webp" />
+                        </div>
+                        <div class="item">
+                            <p>24-26m</p>
+                            <img alt="Aghanims shard" src="aghanims_shard.webp" />
+                        </div>
+                        <div class="item">
+                            <p>26-27m</p>
+                            <img alt="Morbid mask" src="lifesteal.webp" />
+                        </div>
+                        <div class="item">
+                            <p>22-30m</p>
+                            <img alt="Black King Bar" src="black_king_bar.webp" />
+                        </div>
+                        <div class="item">
+                            <p>30+m</p>
+                            <img alt="Satanic" src="satanic.png" />
+                        </div>
+                        <div class="item">
+                            <p>30+m</p>
+                            <img alt="Abyssal Blade" src="abyssal_blade.png" />
+                        </div>
+
+                    </div>
+                    <br />
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Wraith Band" src="wraithband.jpg" /><b style="margin-left: 10px">Wraith Band</b> - Помогает ластхитить крипов на линии.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px;" alt="Magic Wand" src="magic_wand.webp" /><b style="margin-left: 10px">Magic Stick</b> - Приятные +3 ко всем атрибутам и выживаемость на линии. Обязательно против спамящих героев.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Power Threads" src="power_treads.webp" /><b style="margin-left: 10px">Power Threads</b> - Имба за счет своей переключаемой способности. По дефолту ставим на ловкость, если лоу хп то переключаем на силу.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Battle Fury" src="bfury.png" /><b style="margin-left: 10px">Battle Fury</b> - Главный айтем для фарма. После его получения можно смело уходить в лес при условии выигранной линии.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Desolator" src="desolator.webp" /><b style="margin-left: 10px">Desolator</b> - С получением этого артефакта уже можно полноценно подключаться в файты и настакивать урон.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Aghanims shard" src="aghanims_shard.webp" /><b style="margin-left: 10px">Aghanims shard</b> - Способность от него имеет приятный урон и отключает пассивки на 3 секунды. Мастхев против героев с имбовыми пассивками по типу Хускара.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Morbid mask" src="lifesteal.webp" /><b style="margin-left: 10px">Morbid mask</b> - У фантомки всегда большая проблема с выживаемостью. 18% лайфстила решают эту проблему при условии раннего появления. В лейте обязательно апать в сатаник.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Black King Bar" src="black_king_bar.webp" /><b style="margin-left: 10px">Black King Bar</b> - БКБ это один из ключевых айтемов на ПА, т.к. в замесе практически всегда любой стан = смерть.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Satanic" src="satanic.png" /><b style="margin-left: 10px">Satanic</b> - Сатаник также мастхев артефакт в лейте, который позволяет долго жить и вносить тонну дамага.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img style=" width: 32px; height: 28px; border: 1px solid gray; padding:5px; " alt="Abyssal Blade" src="abyssal_blade.png" /><b style="margin-left: 10px">Abyssal Blade</b> - АБ благодаря своим приростам силы и активной способности также может внести много импакта в драке. Но стоит покупать этот айтем последним слотом, если деньги девать уже некуда.
+                        </p>
+                    </div>
+                </div>
+
+                </div>
+
+
+            </div>
+      
+
+
+     
+
+        <script src="scripts.js"></script>
+    </main>
+</body>
+</html>
