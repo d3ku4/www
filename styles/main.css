@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -35,7 +36,6 @@ main {
 
 .tabs {
     display: flex;
-    
     background-color: #1f1f1f;
     width: 100%;
 }
@@ -129,7 +129,6 @@ main {
     gap: 30px;
     position: relative;
     align-items: center;
-   
 }
 
     .item-container::before {
@@ -172,3 +171,34 @@ main {
         height: 28px;
         padding: 5px;
     }
+
+.aboutheader {
+    text-align: center;
+    font-weight: 300;
+}
+
+.abilitiesimg {
+    border: 1px solid gray
+}
+
+.loredesc {
+    font-size: 0.9em;
+}
+
+.aghshard {
+    padding: 8px;
+    background-color: #1c2e50;
+    max-width: 300px;
+    border-radius: 7px;
+}
+
+.itemsdesc img {
+    width: 32px;
+    height: 28px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.itemsdesc b {
+    margin-left: 10px
+}
