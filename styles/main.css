@@ -202,3 +202,383 @@ main {
 .itemsdesc b {
     margin-left: 10px
 }
+
+.mainContainer {
+    height:200px;
+    width: 1000px; /* Ширина контейнера */
+    padding-bottom: 1px;
+    border: 1px solid gray;
+    background-color: #191e1e; /* Цвет фона контейнера */
+    display: flex; /* Используем flexbox для удобного размещения элементов */
+    flex-direction: row; /* Размещаем элементы вертикально */
+    align-items: flex-start; /* Выравниваем элементы по левому краю по горизонтали */
+}
+
+.PAguivid {
+    position: relative;
+    width: 200px; /* Ширина контейнера */
+    height: 200px; /* Высота контейнера */
+    display: flex; /* Используем flexbox для удобного размещения элементов */
+    justify-content: flex-start; /* Выравниваем элементы по левому краю по горизонтали */
+    align-items: flex-start; /* Выравниваем элементы по центру по вертикали */
+}
+
+    .PAguivid video {
+        width: 200px; /* Ширина видео */
+        height: 200px; /* Высота видео */
+        filter: drop-shadow(10px 0 10px rgba(0, 0, 0, 0.5)); /* Тень справа от видео */
+    }
+
+.lvlcircle {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: black; /* Черный цвет фона кружка */
+    border: 2px solid #fddb1c; /* Желтая обводка */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для кружка */
+}
+
+.lvltext {
+    font-size: 14px;
+    color: #fddb1c; /* Желтый цвет текста */
+    font-weight: bold;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.8); /* Тень для текста */
+}
+
+.guiabilitiesContainer {
+    margin-top: 25px; /* Отступ между изображениями */
+    height: 100px;
+    display: flex;
+    flex-direction: row; /* Горизонтальное размещение изображений */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+
+.guiabilitiesimg {
+    border: 1px solid gray;
+    width: 80px;
+    height: 80px;
+    margin-left: 30px; /* Отступ между изображениями */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px; /* Высота может быть скорректирована при необходимости */
+    margin-top: 11px;
+    margin-left: 30px;
+}
+
+.bar-green, .bar-blue {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Центрируем элементы по вертикали */
+    height: 30px;
+    width: 400px; /* Ширина прямоугольников */
+    padding: 0 10px; /* Отступы слева и справа для внутреннего размещения текста */
+}
+
+.bar-green {
+    background-color: #13971b;
+    border: 1px solid gray;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+}
+
+.bar-blue {
+    background-color: #0f4099;
+    border: 1px solid gray;
+    border-top: none;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+}
+
+.bar-text {
+    color: white; /* Цвет текста */
+    font-weight: bold;
+    font-size: 14px; /* Размер шрифта */
+    flex-grow: 1; /* Заставляет элемент занимать доступное пространство */
+    text-align: center; /* Центрируем текст по горизонтали */
+}
+
+.bar-text-hp {
+    color: #33e63f; /* Цвет текста */
+    font-weight: bold;
+    font-size: 14px; /* Размер шрифта */
+}
+.bar-text-mana {
+    color: #2e70ea; /* Цвет текста */
+    font-weight: bold;
+    font-size: 14px; /* Размер шрифта */
+}
+
+
+.wtf {
+    flex-direction: column;
+}
+.inventory {
+    margin-left: 30px;
+    border-left: 1px solid gray;
+    width: 320px; /* Ширина большого квадрата */
+    height: 200px; /* Высота большого квадрата */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создаёт 3 колонки */
+    grid-template-rows: repeat(2, 1fr); /* Создаёт 2 строки */
+    gap: 10px; /* Отступы между квадратами */
+    background-color: #121515;
+    padding: 10px; /* Внутренний отступ контейнера */
+    box-sizing: border-box; /* Учитываем padding в ширину и высоту контейнера */
+}
+
+.invitems {
+    background-color: #292525;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-sizing: border-box; /* Учитываем border в размер элемента */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+}
+
+.guiattributes {
+    position: absolute;
+    bottom: 0; /* Размещаем внизу контейнера */
+    left: 59%; /* Выравниваем по центру контейнера */
+    transform: translateX(-50%); /* Сдвигаем на 50% ширины для точного центрирования */
+    display: flex; /* Используем flexbox для размещения в строку */
+    justify-content: flex-end; /* Выравниваем элементы по горизонтали по центру */
+    padding: 0; /* Удаляем внутренние отступы */
+    margin: 0; /* Удаляем внешние отступы */
+    list-style-type: none; /* Убираем маркеры списка */
+    background-color:#000000c4;
+}
+
+    .guiattributes li {
+        display: flex; /* Используем flexbox для выравнивания иконки и текста */
+        align-items: center; /* Выравниваем элементы по вертикали */
+        margin: 0 10px; /* Отступы между элементами списка */
+    }
+
+.guiicon {
+    width: 16px; /* Размер иконки */
+    height: 16px; /* Размер иконки */
+    margin-right: 0; /* Убираем отступ между иконкой и текстом */
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Создаем 2 колонки */
+    grid-template-rows: repeat(2, 1fr); /* Создаем 2 строки */
+    gap: 10px; /* Отступы между кнопками */
+    margin-top: 10px;
+    width: 220px; /* Общая ширина контейнера */
+    height: 120px; /* Общая высота контейнера */
+}
+
+.guibutton {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #b6afaf;
+    background-color: #292525;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0; /* Убираем внешние отступы */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), inset 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+    .guibutton:hover {
+        background-color: #433d3d;
+    }
+
+.guibutton-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.statsitemcontainer {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+.statsitem {
+    border: 1px solid gray;
+    width: 50px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #211e21;
+    transition: background-color 0.3s;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    cursor: pointer;
+}
+
+    .statsitem:hover {
+        background-color: #433d3d;
+    }
+
+    .statsitem p {
+        font-size: 0.6em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .statsitem img {
+        width: 32px;
+        height: 28px;
+        padding: 5px;
+    }
+
+.buttons-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px; /* Отступ между контейнерами кнопок и статей */
+}
+.statscontainer {
+    width: 500px;
+    height: 179px;
+    background-color: black;
+    border: 1px solid gray;
+    margin-bottom: 20px; /* Отступ снизу */
+    position: relative; /* Необходимо для позиционирования треугольника */
+}
+
+    /* Основной черный треугольник */
+    .statscontainer::before {
+        content: "";
+        position: absolute;
+        bottom: -20px; /* Расположите треугольник так, чтобы он соприкасался с maincontainer */
+        left: 15%; /* Центрируем треугольник по горизонтали */
+        transform: translateX(-50%); /* Корректное центрирование */
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid black; /* Цвет верхней границы треугольника */
+        z-index: 1; /* Обеспечивает, что внутренний треугольник будет сверху */
+    }
+
+    /* Обводка треугольника */
+    .statscontainer::after {
+        content: "";
+        position: absolute;
+        bottom: -21px; /* Немного смещаем вниз, чтобы обводка была видна */
+        left: 15%; /* Центрируем обводку по горизонтали */
+        transform: translateX(-50%); /* Корректное центрирование */
+        width: 0;
+        height: 0;
+        border-left: 21px solid transparent; /* Прозрачная левая граница для обводки */
+        border-right: 21px solid transparent; /* Прозрачная правая граница для обводки */
+        border-top: 21px solid transparent; /* Прозрачная верхняя граница для обводки */
+        border-top-color: gray; /* Цвет обводки треугольника */
+        z-index: 0; /* Обеспечивает, что обводка будет под основным треугольником */
+    }
+.headercontainer {
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 180px;
+    margin-left:100px;
+}
+.headercontainer h3 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: gray;
+}
+
+.a-d-container {
+    width: 500px;
+    height: 240px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.attackcontainer {
+    width: 245px;
+    height: 120px;
+    background: linear-gradient(to bottom, #000000 50%, #050505 60%, #0a0a0a 70%, #0f0f0f 80%, #141414 90%, #1a1a1a 95%, #242424 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.defencecontainer {
+    width: 245px;
+    height: 120px;
+    margin-left: 10px;
+    background: linear-gradient(to bottom, #000000 50%, #050505 60%, #0a0a0a 70%, #0f0f0f 80%, #141414 90%, #1a1a1a 95%, #242424 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+    .defencecontainer::before {
+        content: "";
+        position: absolute;
+        left: -5px; /* половина отступа (10px / 2) */
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: gray;
+    }
+.textcontainer {
+    margin-bottom: 7px;
+    margin-left: 20px;
+}
+    .textcontainer p {
+        font-weight: bold;
+        font-size: 12px;
+        text-align: left;
+        color: #999999;
+        margin: 0;
+        margin-bottom: 2px;
+        padding: 0;
+    }
+.avaluecontainer div {
+    font-size: 12px;
+    color: white; 
+    margin-top:2px;
+}
+
+.dvaluecontainer div {
+    font-size: 12px;
+    color: white;
+    margin-top: 2px;
+}
