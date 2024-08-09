@@ -439,6 +439,7 @@ main {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* ¬нешн€€ тень */
     inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* ¬нутренн€€ тень */
     cursor: pointer;
+    position: relative;
 }
 
     .statsitem:hover {
@@ -581,4 +582,37 @@ main {
     font-size: 12px;
     color: white;
     margin-top: 2px;
+}
+
+
+.tooltip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the item */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
