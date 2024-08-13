@@ -249,7 +249,7 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="mainContainer">
                         <div class="PAguivid">
@@ -277,12 +277,23 @@
 
                         <div class="wtf">
                             <div class="guiabilitiesContainer">
-                                <img class="guiabilitiesimg" alt="Stifling Dagger icon" src="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/1/1c/Stifling_Dagger_icon.png/revision/latest?cb=20170816004056" />
-                                <img class="guiabilitiesimg" alt="Phantom Strike icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/24/Phantom_Strike_icon.png/revision/latest?cb=20120517015221" />
-                                <img class="guiabilitiesimg" alt="Blur icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Blur_icon.png/revision/latest?cb=20130920013204" />
-                                <img class="guiabilitiesimg" alt="Coup de Grace icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Coup_de_Grace_icon.png/revision/latest?cb=20120517015238" />
-
+                                <div class="ability-wrapper">
+                                    <img class="guiabilitiesimg" alt="Stifling Dagger icon" src="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/1/1c/Stifling_Dagger_icon.png/revision/latest?cb=20170816004056" />
+                                    <span class="ability-number">30</span>
+                                </div>
+                                <div class="ability-wrapper">
+                                    <img class="guiabilitiesimg" alt="Phantom Strike icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/2/24/Phantom_Strike_icon.png/revision/latest?cb=20120517015221" />
+                                    <span class="ability-number">45</span>
+                                </div>
+                                <div class="ability-wrapper">
+                                    <img class="guiabilitiesimg" alt="Blur icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ef/Blur_icon.png/revision/latest?cb=20130920013204" />
+                                    <span class="ability-number">50</span>
+                                </div>
+                                <div class="ability-wrapper">
+                                    <img class="guiabilitiesimg" alt="Coup de Grace icon" src="https://static.wikia.nocookie.net/dota2_gamepedia/images/0/0f/Coup_de_Grace_icon.png/revision/latest?cb=20120517015238" />
+                                </div>
                             </div>
+
                             <div class="bars">
                                 <div class="bar-green">
                                     <span class="bar-text">600</span>
@@ -323,25 +334,174 @@
                             <div class="statsitem" draggable="true" id="item1">
                                 <img alt="Wraith Band" src="assets\images\wraithband.jpg" />
                                 <p>Wraith Band</p>
-                                <div class="tooltip"><!--test-->
-                                    <p>+2 Strength, +5 Agility, +2 Intelligence, +10 Attack Speed, +2.6 Armor, +5 Damage, +44 Health, +0.2 HP Regen, +24 Mana, +0.1 Mana Regen, +0.1 Magic Resist</p>
+                                <div class="tooltipWB">
+                                    <div class="tooltipHeader">
+                                        <img alt="Wraith Band" src="assets\images\wraithband.jpg" />
+                                        <p>WRAITH BAND</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: пассивная</p>
+                                    </div>
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">5</span> к ловкости</p>
+                                        <p>+<span class="number">2</span> к силе</p>
+                                        <p>+<span class="number">2</span> к интеллекту</p>
+                                        <p>+<span class="number">5</span> к скорости атаки</p>
+                                        <p>+<span class="number">1.75</span> к броне</p>
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Тиара, от которой доносится легкий шепот</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item2">
                                 <img alt="Magic Wand" src="assets\images\magic_wand.webp" />
                                 <p>Magic Wand</p>
+                                <div class="tooltipMW">
+                                    <div class="tooltipHeader">
+                                        <img alt="Magic Wand" src="assets\images\magic_wand.webp" />
+                                        <p>MAGIC WAND</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: ненаправленная</p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">3</span> ко всем атрибутам</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Energy Charge</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Мгновенно восстанавливает <b>15</b> здоровья и маны за каждый имеющийся заряд.</p>
+                                            <p>Может иметь до <b>20</b> зарядов. Получает один заряд каждый раз, когда видимый враг в радиусе <b>1200</b> использует способность.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Простая волшебная палочка, в которой концентрируют магическую энергию начинающие волшебники и великие колдуны</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item3">
                                 <img alt="Power Threads" src="assets\images\power_treads.webp" />
                                 <p>Power Threads</p>
+                                <div class="tooltipPT">
+                                    <div class="tooltipHeader">
+                                        <img alt="Power Threads" src="assets\images\power_treads.webp" />
+                                        <p>POWER THREADS</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: ненаправленная</p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">45</span> к скорости передвижения (ДАЛЬНИЙ БОЙ)</p>
+                                        <p>+<span class="number">55</span> к скорости передвижения (БЛИЖНИЙ БОЙ)</p>
+                                        <p>+<span class="number">10</span> к выбранному атрибуту</p>
+                                        <p>+<span class="number">25</span> к скорости атаки</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Switch Attribute</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Меняет атрибут, который получает бонус: +<b>10</b> к силе, ловкости или интеллекту.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Пара сапог, выделанных из жесткой кожи, способная изменять свои свойства по желанию владельца.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item4">
                                 <img alt="Battle Fury" src="assets\images\bfury.png" />
                                 <p>Battle Fury</p>
+                                <div class="tooltipBF">
+                                    <div class="tooltipHeader">
+                                        <img alt="Battle Fury" src="assets\images\bfury.png" />
+                                        <p>BATTLE FURY</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: направленная на существо</p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">65</span> к урону</p>
+                                        <p>+<span class="number">7.5</span> к восстановлению здоровья</p>
+                                        <p>+<span class="number">3.75</span> к восстановлению маны</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Chop Tree</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Срубает выбранное дерево.</p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Quell</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Увеличивает урон от атак по существам, не являющимися героями, на <b>10</b> для героев ближнего боя и на <b>5</b> - для дальнего.</p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Cleave</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Атаки героя прорубают жертву, нанося врагам в радиусе 650 вокруг нее физический урон (только в ближнем бою).</p>
+                                            <p>Урон героям: <b>70%</b></p>
+                                            <p>Урон крипам: <b>40%</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Владелец этого могучего топора может выкашивать врагов целыми рядами.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item5">
                                 <img alt="Desolator" src="assets\images\desolator.webp" />
                                 <p>Desolator</p>
+                                <div class="tooltipDES">
+                                    <div class="tooltipHeader">
+                                        <img alt="Desolator" src="assets\images\desolator.webp" />
+                                        <p>DESOLATOR</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: пассивная</p>
+                                        <p>СКВОЗЬ НЕВОСПР. К ЭФФЕКТАМ: <span class="green">да</span></p>
+                                        <p>МОЖНО РАЗВЕЯТЬ: да</p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">50</span> к урону</p>
+                                    </div>
+
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Corruption</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Атаки уменьшают броню цели на <b>6</b>. Эффект длится <b>7</b> сек.</p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Soul Stealer</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Когда умирает герой, броня которого была уменьшена этим предметом, бонус к урону увеличивается на <b>2</b>. Максимум: 30 урона.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Этим нечистым оружием пытали политических преступников.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item6">
                                 <img alt="Morbid Mask" src="assets\images\lifesteal.webp" />
@@ -350,29 +510,138 @@
                             <div class="statsitem" draggable="true" id="item7">
                                 <img alt="Black King Bar" src="assets\images\black_king_bar.webp" />
                                 <p>Black King Bar</p>
+                                <div class="tooltipBKB">
+                                    <div class="tooltipHeader">
+                                        <img alt="Black King Bar" src="assets\images\black_king_bar.webp" />
+                                        <p>BLACK KING BAR</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: ненаправленная</p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">10</span> к силе</p>
+                                        <p>+<span class="number">24</span> к урону</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Avatar</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Применяет на владельца нормальное развеивание. Дает +<b>60%</b> к сопротивлению магии и невосприимчивость к чистому и отраженному урону. Защищает владельца от действия отрицательных эффектов.</p>
+                                            <p>Длительность:9/8/7/6</p>
+                                            <p>Тип развеивания: <b>нормальное</b></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="tooltipAbout">
+                                        <p>Мощный посох, наделенный силой гигантов.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item8">
                                 <img alt="Satanic" src="assets\images\satanic.png" />
                                 <p>Satanic</p>
+                                <div class="tooltipSTC">
+                                    <div class="tooltipHeader">
+                                        <img alt="Satanic" src="assets\images\satanic.png" />
+                                        <p>SATANIC</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: ненаправленная</p>
+                                        <p>МОЖНО РАЗВЕЯТЬ: <span class="red">нет</span></p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">25</span> к силе</p>
+                                        <p>+<span class="number">25</span> к урону</p>
+                                        <p>+<span class="number">30%</span> к вампиризму</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Unholy Rage</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Увеличивает эффект вампиризма до <b>175%</b> на <b>6</b> сек.</p>
+                                            <p>Тип развеивания: <b>нормальное</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Lifesteal</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Каждая атака восстанавливает владельцу здоровье в размере доли от нанесенного урона. Вампиризм от крипов слабее на <b>40%</b>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Колоссальная сила в обмен на вашу душу.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="statsitem" draggable="true" id="item9">
                                 <img alt="Abyssal Blade" src="assets\images\abyssal_blade.png" />
                                 <p>Abyssal Blade</p>
+                                <div class="tooltipAB">
+                                    <div class="tooltipHeader">
+                                        <img alt="Abyssal Blade" src="assets\images\abyssal_blade.png" />
+                                        <p>ABYSSAL BLADE</p>
+                                    </div>
+                                    <div class="tooltipType">
+                                        <p>ТИП: направленная на существо</p>
+                                        <p>ДЕЙСТВУЕТ: на вражеских существ</p>
+                                        <p>МОЖНО РАЗВЕЯТЬ: <span class="red">сильным развеиванием</span></p>
+                                    </div>
+
+                                    <div class="tooltipInfo">
+                                        <p>+<span class="number">35</span> к урону</p>
+                                        <p>+<span class="number">250</span> к здоровью</p>
+                                        <p>+<span class="number">10</span> к восстановлению здоровья</p>
+                                        <p>+<span class="number">10</span> к силе</p>
+                                    </div>
+                                    <div class="activeAbility">
+                                        <div class="activeAbilityHeader">
+                                            <p><span class="number">Активное: Overwhelm</span></p>
+                                        </div>
+                                        <div class="activeAbilityInfo">
+                                            <p>Оглушает выбранного противника на <b>1.6</b> сек.</p>
+                                            <p>Проходит сквозь невосприимчивость к магии.</p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Bash</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>Каждая атака может оглушить цель на <b>1.2</b> сек. и нанести <b>120</b> физического урона. Вероятность зависит от типа атаки владельца: <b>25%</b> в ближнем бою, <b>10%</b> - в дальнем.</p>
+                                        </div>
+                                    </div>
+                                    <div class="passiveAbility">
+                                        <div class="passiveAbilityHeader">
+                                            <p>Пассивное: Damage Block</p>
+                                        </div>
+                                        <div class="passiveAbilityInfo">
+                                            <p>С вероятностью в <b>60%</b> блокирует <b>70</b> урона от атак, если владелец - герой ближнего боя, или <b>35</b> урона, если герой дальнего боя.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltipAbout">
+                                        <p>Острие потерянного клинка Повелителя бездны впивается врагу прямо в душу.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
-
-                </div>  
+                </div>
             </div>
 
 
         </div>
-      
 
 
-     
+
+
 
         <script src="scripts/main.js"></script>
     </main>

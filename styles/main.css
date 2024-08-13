@@ -261,6 +261,8 @@ main {
 }
 
 
+
+
 .guiabilitiesimg {
     border: 1px solid gray;
     width: 80px;
@@ -585,23 +587,26 @@ main {
 }
 
 
-.tooltip {
+.tooltipWB {
     visibility: hidden;
-    background-color: #555;
+    background-color: #151723;
     color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 195px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position above the item */
+    bottom: 110%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-    .tooltip::after {
+    .tooltipWB::after {
         content: "";
         position: absolute;
         top: 100%; /* Arrow pointing down */
@@ -612,7 +617,420 @@ main {
         border-color: #555 transparent transparent transparent;
     }
 
-.show-tooltip {
+.show-tooltipWB {
     visibility: visible;
     opacity: 1;
+}
+
+.tooltipHeader {
+    width: 200px;
+    height: 50px;
+    background-color: #242434;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /* Чтобы padding не увеличивал размеры блока */
+}
+
+    .tooltipHeader img {
+        width: 50px;
+        height: 40px;
+        border-radius: 2px;
+        padding: 0;
+        margin-right: 10px;
+        margin-left: 4px;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+        inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .tooltipHeader p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 27px;
+    }
+.tooltipType {
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: 0.5px solid #3f3f5a;
+    border-bottom: 0.5px solid #3f3f5a;
+}
+    .tooltipType p {
+        font-size: 9px;
+        text-align: left;
+        padding: 2px;
+        color: #3f3f5a;
+    }
+.tooltipInfo {
+    margin-top: 10px;
+}
+
+    .tooltipInfo p {
+        font-size: 11px;
+        padding: 3px;
+        text-align: left;
+        color: #8989a1; /* Цвет по умолчанию для текста */
+        font-weight: normal; /* Обычный шрифт */
+    }
+
+    .tooltipInfo .number {
+        font-weight: bold;
+        color: #fff; /* Белый цвет для цифр */
+    }
+.tooltipAbout {
+    background-color: #090b10;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top:2px;
+}
+
+    .tooltipAbout p {
+        font-size: 8px;
+        padding: 2px;
+        margin-left:2px;
+        text-align: left;
+        color: #434356; /* Цвет по умолчанию для текста */
+    }
+
+.tooltipMW {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipMW::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipMW {
+    visibility: visible;
+    opacity: 1;
+}
+.activeAbility {
+    display: flex;
+    flex-direction: column;
+    background-color: #141273;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.activeAbilityHeader {
+    background: linear-gradient(to right, #0c27c0 60%, #141273 100%);
+    background-color: #0c27c0;
+    font-weight: bold;
+    padding: 2px;
+    color: #6f8af6;
+    text-align: left;
+}
+    .activeAbilityHeader p {
+        text-align: left;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .activeAbilityInfo {
+    color: #8989a1;
+    text-align: left;
+}
+    .activeAbilityInfo p {
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+.tooltipBF {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 385px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipBF::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipBF {
+    visibility: visible;
+    opacity: 1;
+}
+.passiveAbility {
+    display: flex;
+    flex-direction: column;
+    background-color: #262831;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.passiveAbilityHeader {
+    background: linear-gradient(to right, #3c404e 60%, #262831 100%);
+    background-color: #3c404e;
+    font-weight: bold;
+    padding: 2px;
+    color: #8c91a6;
+    text-align: left;
+}
+
+    .passiveAbilityHeader p {
+        text-align: left;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+.passiveAbilityInfo {
+    color: #8c91a6;
+    text-align: left;
+}
+
+    .passiveAbilityInfo p {
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+.green {
+    color: #37ff30;
+}
+.tooltipDES {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 285px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipDES::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipDES {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltipBKB {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 275px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipBKB::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipBKB {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltipSTC {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 313px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipSTC::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipSTC {
+    visibility: visible;
+    opacity: 1;
+}
+.red {
+    color: #bf2929;
+}
+
+.tooltipAB {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 465px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipAB::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipAB {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltipPT {
+    visibility: hidden;
+    background-color: #151723;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid gray;
+    width: 200px;
+    height: 285px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .tooltipPT::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Arrow pointing down */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.show-tooltipPT {
+    visibility: visible;
+    opacity: 1;
+}
+.ability-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.guiabilitiesimg {
+    width: 64px; /* Adjust size as needed */
+    height: 64px; /* Adjust size as needed */
+}
+
+.ability-number {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #2b29a3;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7), /* Тень вокруг текста */
+    0px 0px 2px black; /* Черная обводка */
 }
