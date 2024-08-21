@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phantom Assassin - Dota 2</title>
-    <link rel="icon" href="https://static.wikia.nocookie.net/dota2_ru_gamepedia/images/c/c9/Phantom_Assassin_minimap_icon.png/revision/latest?cb=20170816004245">
+    <link rel="icon" href="assets\images\favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -102,43 +102,43 @@
                     <br />
                     <div class="item-container">
                         <div class="item">
-                            <p>2-4m</p>
+                            <p class="itemTiming">2-4m</p>
                             <img alt="Wraith Band" src="assets\images\wraithband.jpg" />
                         </div>
                         <div class="item">
-                            <p>4-5m</p>
+                            <p class="itemTiming">4-5m</p>
                             <img alt="Magic Wand" src="assets\images\magic_wand.webp" />
                         </div>
                         <div class="item">
-                            <p>5-8m</p>
+                            <p class="itemTiming">5-8m</p>
                             <img alt="Power Threads" src="assets\images\power_treads.webp" />
                         </div>
                         <div class="item">
-                            <p>12-16m</p>
+                            <p class="itemTiming">12-16m</p>
                             <img alt="Battle Fury" src="assets\images\bfury.png" />
                         </div>
                         <div class="item">
-                            <p>21-24m</p>
+                            <p class="itemTiming">21-24m</p>
                             <img alt="Desolator" src="assets\images\desolator.webp" />
                         </div>
                         <div class="item">
-                            <p>24-26m</p>
+                            <p class="itemTiming">24-26m</p>
                             <img alt="Aghanims shard" src="assets\images\aghanims_shard.webp" />
                         </div>
                         <div class="item">
-                            <p>26-27m</p>
+                            <p class="itemTiming">26-27m</p>
                             <img alt="Morbid mask" src="assets\images\lifesteal.webp" />
                         </div>
                         <div class="item">
-                            <p>22-30m</p>
+                            <p class="itemTiming">22-30m</p>
                             <img alt="Black King Bar" src="assets\images\black_king_bar.webp" />
                         </div>
                         <div class="item">
-                            <p>30+m</p>
+                            <p class="itemTiming">30+m</p>
                             <img alt="Satanic" src="assets\images\satanic.png" />
                         </div>
                         <div class="item">
-                            <p>30+m</p>
+                            <p class="itemTiming">30+m</p>
                             <img alt="Abyssal Blade" src="assets\images\abyssal_blade.png" />
                         </div>
 
@@ -218,12 +218,12 @@
 
                                 </div>
                                 <div class="avaluecontainer">
-                                    <div class="AttackSpeed">131 (1.30s)</div>
-                                    <div class="Damage">57</div>
-                                    <div class="AttackRange">150</div>
-                                    <div class="MoveSpeed">310</div>
-                                    <div class="MagicAmplify">0.0%</div>
-                                    <div class="ManaRegen">0.75</div>
+                                    <div id="AttackSpeed">131 (1.30s)</div>
+                                    <div id="Damage">57</div>
+                                    <div id="AttackRange">150</div>
+                                    <div id="MoveSpeed">310</div>
+                                    <div id="MagicAmplify">0.0%</div>
+                                    <div id="ManaRegen">0.75</div>
                                 </div>
 
                             </div>
@@ -238,12 +238,12 @@
 
                                 </div>
                                 <div class="dvaluecontainer">
-                                    <div class="Armor">4.5</div>
-                                    <div class="MagicResist">26%</div>
-                                    <div class="StatusResist">0.0%</div>
-                                    <div class="SlowResist">0.0%</div>
-                                    <div class="Evade">21%</div>
-                                    <div class="Regen">2.90</div>
+                                    <div id="Armor">4.5</div>
+                                    <div id="MagicResist">26%</div>
+                                    <div id="StatusResist">0.0%</div>
+                                    <div id="SlowResist">0.0%</div>
+                                    <div id="Evade">21%</div>
+                                    <div id="Regen">2.90</div>
 
                                 </div>
 
@@ -316,16 +316,16 @@
                     </div>
                     <div class="buttons-items-container">
                         <div class="button-container">
-                            <button class="guibutton" onclick="updateCharLevel(1)">
+                            <button class="guibutton" id="increaseLevelButton">
                                 <span class="guibutton-text">+1 ур.</span>
                             </button>
-                            <button class="guibutton" onclick="updateCharLevel(-1)">
+                            <button class="guibutton" id = "decreaseLevelButton">
                                 <span class="guibutton-text">-1 ур.</span>
                             </button>
-                            <button class="guibutton" onclick="updateCharLevel(30)">
+                            <button class="guibutton" id="maxLevelButton">
                                 <span class="guibutton-text">+30 ур.</span>
                             </button>
-                            <button class="guibutton" onclick="resetCharLevel()">
+                            <button class="guibutton" id="resetLevelButton">
                                 <span class="guibutton-text">—бросить</span>
                             </button>
 

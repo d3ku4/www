@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+:root {
+    --main-bg-color: #121515;
+    --item-bg: #211e21;
+    --tooltip-bg-color: #151723;
+}
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121515;
+    background-color: var( --main-bg-color);
 }
 
 header {
@@ -29,9 +33,9 @@ main {
 
 .container {
     display: flex;
-    flex-direction: column; /* Вкладки и содержимое будут вертикально */
-    flex-grow: 1; /* Разрешить контейнеру расширяться */
-    margin-right: 20px; /* Отступ от изображения */
+    flex-direction: column; 
+    flex-grow: 1;
+    margin-right: 20px; 
 }
 
 .tabs {
@@ -47,16 +51,16 @@ main {
     cursor: pointer;
     padding: 8px 16px;
     margin: 0;
-    font-size: 14px; /* Уменьшенный размер шрифта */
-    color: #ffffff; /* Белый текст */
+    font-size: 14px; 
+    color: #ffffff;
     text-align: center;
     transition: background-color 0.3s, border-color 0.3s;
-    flex: 1; /* Растянуть кнопку на всю ширину контейнера */
+    flex: 1; 
 }
 
     .tab-button.active {
         background-color: #1f1f1f;
-        border-bottom: 2px solid #676c70; /* Увеличенная граница для активной вкладки */
+        border-bottom: 2px solid #676c70; 
         border-right: 1px solid #444;
     }
 
@@ -67,7 +71,7 @@ main {
 .tab-content {
     display: none;
     padding: 20px;
-    background-color: #121515;
+    background-color: var( --main-bg-color);
     border-bottom: 2px solid #ddd;
     border-right: 2px solid #ddd;
     border-left: 2px solid #ddd;
@@ -82,10 +86,10 @@ main {
 
 
 .frame {
-    border: 2px solid #ffffff; /* Увеличьте ширину обводки, если нужно */
-    padding: 10px; /* Увеличьте внутренние отступы, если нужно */
-    background-color: #121515;
-    border-radius: 5px; /* Скругление углов обводки */
+    border: 2px solid #ffffff;
+    padding: 10px;
+    background-color: var( --main-bg-color);
+    border-radius: 5px;
     margin: 10px;
 }
 
@@ -99,13 +103,13 @@ main {
     text-align: center;
     color: white;
     font-weight: 600;
-    margin-top: 10px; /* Добавьте отступ сверху для разделения */
+    margin-top: 10px; 
 }
 
 .listpic {
     list-style-type: none;
-    padding: 0; /* Удалите внутренние отступы */
-    margin: 0; /* Удалите внешние отступы */
+    padding: 0; 
+    margin: 0; 
 }
 
     .listpic li {
@@ -119,7 +123,7 @@ main {
         margin-right: 10px;
         width: 16px;
         height: 16px;
-        vertical-align: middle; /* Выравнивание иконки по вертикали с текстом */
+        vertical-align: middle; 
     }
 
 
@@ -139,7 +143,7 @@ main {
         width: 100%;
         height: 2px;
         background-color: lightblue;
-        z-index: -1; /* Обеспечивает, что линия находится позади блоков */
+        z-index: -1; 
     }
 
 .item {
@@ -151,15 +155,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #211e21;
+    background-color: var(--item-bg);
     transition: background-color 0.3s;
 }
 
     .item:hover {
-        background-color: #211e21;
+        background-color: var(--item-bg);
     }
 
-    .item p {
+    .itemTiming {
         font-size: 0.6em;
         text-align: center;
         margin: 0;
@@ -205,28 +209,28 @@ main {
 
 .mainContainer {
     height:200px;
-    width: 1000px; /* Ширина контейнера */
+    width: 1000px; 
     padding-bottom: 1px;
     border: 1px solid gray;
-    background-color: #191e1e; /* Цвет фона контейнера */
-    display: flex; /* Используем flexbox для удобного размещения элементов */
-    flex-direction: row; /* Размещаем элементы вертикально */
-    align-items: flex-start; /* Выравниваем элементы по левому краю по горизонтали */
+    background-color: #191e1e; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
 }
 
 .PAguivid {
     position: relative;
-    width: 200px; /* Ширина контейнера */
-    height: 200px; /* Высота контейнера */
-    display: flex; /* Используем flexbox для удобного размещения элементов */
-    justify-content: flex-start; /* Выравниваем элементы по левому краю по горизонтали */
-    align-items: flex-start; /* Выравниваем элементы по центру по вертикали */
+    width: 200px; 
+    height: 200px; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
 }
 
     .PAguivid video {
-        width: 200px; /* Ширина видео */
-        height: 200px; /* Высота видео */
-        filter: drop-shadow(10px 0 10px rgba(0, 0, 0, 0.5)); /* Тень справа от видео */
+        width: 200px; 
+        height: 200px;
+        filter: drop-shadow(10px 0 10px rgba(0, 0, 0, 0.5)); 
     }
 
 .lvlcircle {
@@ -235,29 +239,29 @@ main {
     left: 2px;
     width: 30px;
     height: 30px;
-    background-color: black; /* Черный цвет фона кружка */
-    border: 2px solid #fddb1c; /* Желтая обводка */
+    background-color: black; 
+    border: 2px solid #fddb1c; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для кружка */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .lvltext {
     font-size: 14px;
-    color: #fddb1c; /* Желтый цвет текста */
+    color: #fddb1c; 
     font-weight: bold;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.8); /* Тень для текста */
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 255, 0, 0.8); 
 }
 
 .guiabilitiesContainer {
-    margin-top: 25px; /* Отступ между изображениями */
+    margin-top: 25px; 
     height: 100px;
     display: flex;
-    flex-direction: row; /* Горизонтальное размещение изображений */
-    justify-content: flex-start; /* Выравнивание по левому краю */
-    align-items: flex-start; /* Выравнивание по верхнему краю */
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: flex-start;
 }
 
 
@@ -267,61 +271,61 @@ main {
     border: 1px solid gray;
     width: 80px;
     height: 80px;
-    margin-left: 30px; /* Отступ между изображениями */
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
-    inset 5px 5px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    margin-left: 30px; 
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), 
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .bars {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 50px; /* Высота может быть скорректирована при необходимости */
+    height: 50px; 
     margin-top: 11px;
     margin-left: 30px;
 }
 
 .bar-green, .bar-blue {
     display: flex;
-    justify-content: space-between; /* Распределяет пространство между элементами */
-    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; 
+    align-items: center;
     height: 30px;
-    width: 400px; /* Ширина прямоугольников */
-    padding: 0 10px; /* Отступы слева и справа для внутреннего размещения текста */
+    width: 400px; 
+    padding: 0 10px; 
 }
 
 .bar-green {
     background-color: #13971b;
     border: 1px solid gray;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
-    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5),
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .bar-blue {
     background-color: #0f4099;
     border: 1px solid gray;
     border-top: none;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
-    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5),
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .bar-text {
-    color: white; /* Цвет текста */
+    color: white;
     font-weight: bold;
-    font-size: 14px; /* Размер шрифта */
-    flex-grow: 1; /* Заставляет элемент занимать доступное пространство */
-    text-align: center; /* Центрируем текст по горизонтали */
+    font-size: 14px; 
+    flex-grow: 1;
+    text-align: center; 
 }
 
 .bar-text-hp {
-    color: #33e63f; /* Цвет текста */
+    color: #33e63f;
     font-weight: bold;
-    font-size: 14px; /* Размер шрифта */
+    font-size: 14px;
 }
 .bar-text-mana {
-    color: #2e70ea; /* Цвет текста */
+    color: #2e70ea;
     font-weight: bold;
-    font-size: 14px; /* Размер шрифта */
+    font-size: 14px; 
 }
 
 
@@ -331,15 +335,15 @@ main {
 .inventory {
     margin-left: 30px;
     border-left: 1px solid gray;
-    width: 320px; /* Ширина большого квадрата */
-    height: 200px; /* Высота большого квадрата */
+    width: 320px;
+    height: 200px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Создаёт 3 колонки */
-    grid-template-rows: repeat(2, 1fr); /* Создаёт 2 строки */
-    gap: 10px; /* Отступы между квадратами */
-    background-color: #121515;
-    padding: 10px; /* Внутренний отступ контейнера */
-    box-sizing: border-box; /* Учитываем padding в ширину и высоту контейнера */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: var( --main-bg-color);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .invitems {
@@ -349,44 +353,44 @@ main {
     align-items: center;
     justify-content: center;
     color: white;
-    box-sizing: border-box; /* Учитываем border в размер элемента */
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
-    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    box-sizing: border-box; 
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), 
+    inset 7px 7px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .guiattributes {
     position: absolute;
-    bottom: 0; /* Размещаем внизу контейнера */
-    left: 59%; /* Выравниваем по центру контейнера */
-    transform: translateX(-50%); /* Сдвигаем на 50% ширины для точного центрирования */
-    display: flex; /* Используем flexbox для размещения в строку */
-    justify-content: flex-end; /* Выравниваем элементы по горизонтали по центру */
-    padding: 0; /* Удаляем внутренние отступы */
-    margin: 0; /* Удаляем внешние отступы */
-    list-style-type: none; /* Убираем маркеры списка */
+    bottom: 0; 
+    left: 59%; 
+    transform: translateX(-50%); 
+    display: flex; 
+    justify-content: flex-end; 
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
     background-color:#000000c4;
 }
 
     .guiattributes li {
-        display: flex; /* Используем flexbox для выравнивания иконки и текста */
-        align-items: center; /* Выравниваем элементы по вертикали */
-        margin: 0 10px; /* Отступы между элементами списка */
+        display: flex; 
+        align-items: center; 
+        margin: 0 10px;
     }
 
 .guiicon {
-    width: 16px; /* Размер иконки */
-    height: 16px; /* Размер иконки */
-    margin-right: 0; /* Убираем отступ между иконкой и текстом */
+    width: 16px; 
+    height: 16px;
+    margin-right: 0;
 }
 
 .button-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Создаем 2 колонки */
-    grid-template-rows: repeat(2, 1fr); /* Создаем 2 строки */
-    gap: 10px; /* Отступы между кнопками */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
     margin-top: 10px;
-    width: 220px; /* Общая ширина контейнера */
-    height: 120px; /* Общая высота контейнера */
+    width: 220px; 
+    height: 120px; 
 }
 
 .guibutton {
@@ -399,7 +403,7 @@ main {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 0; /* Убираем внешние отступы */
+    margin: 0; 
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), inset 7px 7px 10px rgba(0, 0, 0, 0.5);
@@ -436,10 +440,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #211e21;
+    background-color: var(--item-bg);
     transition: background-color 0.3s;
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
-    inset 7px 7px 10px rgba(0, 0, 0, 0.5); /* Внутренняя тень */
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5), inset 7px 7px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     position: relative;
 }
@@ -465,46 +468,44 @@ main {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 20px; /* Отступ между контейнерами кнопок и статей */
+    gap: 20px;
 }
 .statscontainer {
     width: 500px;
     height: 179px;
     background-color: black;
     border: 1px solid gray;
-    margin-bottom: 20px; /* Отступ снизу */
-    position: relative; /* Необходимо для позиционирования треугольника */
+    margin-bottom: 20px; 
+    position: relative; 
 }
 
-    /* Основной черный треугольник */
     .statscontainer::before {
         content: "";
         position: absolute;
-        bottom: -20px; /* Расположите треугольник так, чтобы он соприкасался с maincontainer */
-        left: 15%; /* Центрируем треугольник по горизонтали */
-        transform: translateX(-50%); /* Корректное центрирование */
+        bottom: -20px; 
+        left: 15%; 
+        transform: translateX(-50%); 
         width: 0;
         height: 0;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
-        border-top: 20px solid black; /* Цвет верхней границы треугольника */
-        z-index: 1; /* Обеспечивает, что внутренний треугольник будет сверху */
+        border-top: 20px solid black; 
+        z-index: 1; 
     }
 
-    /* Обводка треугольника */
     .statscontainer::after {
         content: "";
         position: absolute;
-        bottom: -21px; /* Немного смещаем вниз, чтобы обводка была видна */
-        left: 15%; /* Центрируем обводку по горизонтали */
-        transform: translateX(-50%); /* Корректное центрирование */
+        bottom: -21px; 
+        left: 15%; 
+        transform: translateX(-50%); 
         width: 0;
         height: 0;
-        border-left: 21px solid transparent; /* Прозрачная левая граница для обводки */
-        border-right: 21px solid transparent; /* Прозрачная правая граница для обводки */
-        border-top: 21px solid transparent; /* Прозрачная верхняя граница для обводки */
-        border-top-color: gray; /* Цвет обводки треугольника */
-        z-index: 0; /* Обеспечивает, что обводка будет под основным треугольником */
+        border-left: 21px solid transparent;
+        border-right: 21px solid transparent; 
+        border-top: 21px solid transparent; 
+        border-top-color: gray; 
+        z-index: 0;
     }
 .headercontainer {
     display:flex;
@@ -555,7 +556,7 @@ main {
     .defencecontainer::before {
         content: "";
         position: absolute;
-        left: -5px; /* половина отступа (10px / 2) */
+        left: -5px;
         top: 0;
         bottom: 0;
         width: 1px;
@@ -589,7 +590,7 @@ main {
 
 .tooltipWB {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -609,7 +610,7 @@ main {
     .tooltipWB::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -628,7 +629,7 @@ main {
     background-color: #242434;
     display: flex;
     align-items: center;
-    box-sizing: border-box; /* Чтобы padding не увеличивал размеры блока */
+    box-sizing: border-box; 
 }
 
     .tooltipHeader img {
@@ -639,7 +640,7 @@ main {
         margin-right: 10px;
         margin-left: 4px;
         box-sizing: border-box;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5), /* Внешняя тень */
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5),
         inset 3px 3px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -672,13 +673,13 @@ main {
         font-size: 11px;
         padding: 3px;
         text-align: left;
-        color: #8989a1; /* Цвет по умолчанию для текста */
-        font-weight: normal; /* Обычный шрифт */
+        color: #8989a1; 
+        font-weight: normal; 
     }
 
     .tooltipInfo .number {
         font-weight: bold;
-        color: #fff; /* Белый цвет для цифр */
+        color: #fff; 
     }
 .tooltipAbout {
     background-color: #090b10;
@@ -692,12 +693,12 @@ main {
         padding: 2px;
         margin-left:2px;
         text-align: left;
-        color: #434356; /* Цвет по умолчанию для текста */
+        color: #434356; 
     }
 
 .tooltipMW {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -717,7 +718,7 @@ main {
     .tooltipMW::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -766,7 +767,7 @@ main {
 
 .tooltipBF {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -786,7 +787,7 @@ main {
     .tooltipBF::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -841,7 +842,7 @@ main {
 }
 .tooltipDES {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -861,7 +862,7 @@ main {
     .tooltipDES::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -875,7 +876,7 @@ main {
 }
 .tooltipBKB {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -895,7 +896,7 @@ main {
     .tooltipBKB::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -909,7 +910,7 @@ main {
 }
 .tooltipSTC {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -929,7 +930,7 @@ main {
     .tooltipSTC::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -947,7 +948,7 @@ main {
 
 .tooltipAB {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -967,7 +968,7 @@ main {
     .tooltipAB::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -981,7 +982,7 @@ main {
 }
 .tooltipPT {
     visibility: hidden;
-    background-color: #151723;
+    background-color: var(--tooltip-bg-color);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -1001,7 +1002,7 @@ main {
     .tooltipPT::after {
         content: "";
         position: absolute;
-        top: 100%; /* Arrow pointing down */
+        top: 100%; 
         left: 50%;
         margin-left: -5px;
         border-width: 5px;
@@ -1020,8 +1021,8 @@ main {
 }
 
 .guiabilitiesimg {
-    width: 64px; /* Adjust size as needed */
-    height: 64px; /* Adjust size as needed */
+    width: 64px; 
+    height: 64px; 
 }
 
 .ability-number {
@@ -1031,6 +1032,6 @@ main {
     color: #2b29a3;
     font-size: 14px;
     font-weight: bold;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7), /* Тень вокруг текста */
-    0px 0px 2px black; /* Черная обводка */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7), 
+    0px 0px 2px black; 
 }
